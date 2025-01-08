@@ -7,4 +7,6 @@ This repo contains the main python scripts that can be used to calculate the str
 `numpy`, `scipy`, `pandas`, `pyarrow` (for `.feather` files)
 
 ### Usage
-You may simply follow the comments in `calculate_PO2.0_Bayes_factor.py` and edit the file paths to calculate the Bayes factor for your data.
+For calculating the Bayes factor, you may simply follow the comments in `calculate_PO2.0_Bayes_factor.py` and edit the file paths to match your data.
+
+If a lensed event has been identified, you may obtain a combined posterior over its parameters using `lensed_parameter_estimation.py`

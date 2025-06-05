@@ -179,7 +179,7 @@ w0, lsmr0 = calc_lensed_posterior(posterior_samples1, posterior_samples2, dL_PE_
                                   samples_P_HL0, theta_unbiased, morse_factor=0, use_distance=True, deltaT=deltaT, \
                                   verbose=verbose, bw_fac_dist=1./rbw_fac, bw_fac_kde2=1./rbw_fac, bw_fac_P_HL=1./rbw_fac)
 w1, lsmr1 = calc_lensed_posterior(posterior_samples1, posterior_samples2, dL_PE_prior, \
-                                  samples_P_HL0, theta_unbiased, morse_factor=1, use_distance=True, deltaT=deltaT, \
+                                  samples_P_HL1, theta_unbiased, morse_factor=1, use_distance=True, deltaT=deltaT, \
                                   verbose=verbose, bw_fac_dist=1./rbw_fac, bw_fac_kde2=1./rbw_fac, bw_fac_P_HL=1./rbw_fac)
 ZL0 = np.mean(w0)
 Out['log10_ZL0'] = np.log10(np.clip(ZL0, 1e-30, 1e30))
